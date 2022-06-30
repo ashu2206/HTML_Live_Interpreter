@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Interpreter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <script>
+        function html_interpreter()
+        {
+    x=document.getElementById("d1");
+     
+    y=document.getElementById("d2");
+   
+    y.innerHTML=x.value;
+       
+        }
+    </script>
+</head>
+<body>
+    <div class="first">
+        <h1>Welcome To Live HTML Interpreter</h1>
+        
+
+    </div>
+    
+<div id="marq">
+    <marquee>Welcome to live HTML Interpreter</marquee>
+</div>
+<div class="sub_heading">
+    <h3>Enter HTML Code:</h3>
+</div>
+<div class="txt">
+    <textarea id="d1" cols=80 rows=25 onkeyup=html_interpreter()></textarea>
+</div>
+<br>
+<br>
+<div id="d2"></div>
+
+</body>
+
+  
+
+</body>
+</html>
